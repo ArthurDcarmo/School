@@ -6,18 +6,18 @@
 
 <h2>Editar Matrícula</h2>
 
-<form asp-controller="Matricula" asp-action="Edit" method="post">
+<form asp-controller="Matricula" asp-action="Update" method="post">
     
 
     <div class="mb-3">
         <label asp-for="AlunoID" class="form-label">Aluno</label>
-        <select asp-for="AlunoID" class="form-select" asp-items="ViewBag.Alunos" required></select>
+        <select asp-for="AlunoID" class="form-select" asp-items="ViewBag.Alunos"></select>
         <span asp-validation-for="AlunoID" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="DisciplinaID" class="form-label">Disciplina</label>
-        <select asp-for="DisciplinaID" class="form-select" asp-items="ViewBag.Disciplinas" required></select>
+        <select asp-for="DisciplinaID" class="form-select" asp-items="ViewBag.Disciplinas"></select>
         <span asp-validation-for="DisciplinaID" class="text-danger"></span>
     </div>
 
